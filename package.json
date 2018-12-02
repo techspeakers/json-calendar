@@ -1,0 +1,29 @@
+{
+  "name": "json-calendar",
+  "version": "0.1.0",
+  "description": "Turn ics files into JSON objects",
+  "main": "json-calendar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaki/json-calendar.git"
+  },
+  "keywords": [
+    "json",
+    "calendar",
+    "ical"
+  ],
+  "author": "Flaki <git@flaki.hu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flaki/json-calendar/issues"
+  },
+  "homepage": "https://github.com/flaki/json-calendar#readme",
+  "dependencies": {
+    "cacache": "^11.3.1",
+    "ical": "^0.5.0",
+    "jsonfile": "^5.0.0"
+  }
+}
