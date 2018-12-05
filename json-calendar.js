@@ -5,10 +5,6 @@ const fs = require('fs')
 const path = require('path')
 const jsonfile = require('jsonfile')
 
-const CFG = require('../cfg')
-
-const dates = require('./dates')
-
 // Caching
 const cacache = require('cacache/en')
 const cachePath = require('find-cache-dir')({name: 'json-calendar'})
@@ -102,8 +98,8 @@ async function fromUrl(icalUrl) {
   } )
 }
 
-async function fromICSData(data) {
-  let data = ical.parseICS(data)
+async function fromICSData(icsdata) {
+  let data = ical.parseICS(icsdata)
   return Promise.resolve(preprocessCalendarData(data))
 }
 
