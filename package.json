@@ -1,6 +1,6 @@
 {
-  "name": "json-calendar",
-  "version": "0.1.0",
+  "name": "@flaki/json-calendar",
+  "version": "0.1.1",
   "description": "Turn ics files into JSON objects",
   "main": "json-calendar.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/flaki/json-calendar#readme",
   "dependencies": {
     "cacache": "^11.3.1",
+    "find-cache-dir": "^2.0.0",
     "ical": "^0.5.0",
     "jsonfile": "^5.0.0"
   }
