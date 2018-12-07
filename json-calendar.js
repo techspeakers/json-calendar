@@ -1,6 +1,6 @@
 'use strict';
 
-const ical = require('ical')
+const ical = require('node-ical')
 const fs = require('fs')
 const path = require('path')
 const jsonfile = require('jsonfile')
@@ -16,7 +16,7 @@ const defaultCacheTTL = 24*60*60*1000 // 1 day
 /* Takes:
   - String representing an ICAL url
   - String representing a path to an ICS file
-  - String with ICS contents
+  - String with ICS contentsISOString
   - Object with options and "src" attribute representing any of the above
 
   Options include:
